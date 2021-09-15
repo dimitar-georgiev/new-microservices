@@ -1,4 +1,4 @@
-name: test-expiration
+name: test-orders
 
 on: 
   pull_request
@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd expiration && npm install && npm test:ci
+      - run: cd orders && npm install && npm test:ci
